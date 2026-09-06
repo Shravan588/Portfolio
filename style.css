@@ -167,3 +167,24 @@ body.dark-mode li {
     color: #e0e0e0;
     border-left-color: #90cdf4;
 }
+/* Add space between the icon and the text */
+.contact-btn i, .linkedin-btn i, .github-btn i {
+    margin-right: 8px;
+}
+.github-btn {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 12px 28px;
+    background-color: #24292e;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.github-btn:hover {
+    background-color: #000000;
+    transform: translateY(-2px);
+}

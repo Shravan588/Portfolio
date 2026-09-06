@@ -15,3 +15,18 @@ toggleBtn.addEventListener('click', function() {
         toggleBtn.textContent = '🌙 Dark Mode';
     }
 });
+// Typewriter Effect
+const textToType = "Aspiring AI Developer & Engineering Student";
+const typewriterElement = document.getElementById('typewriter');
+let textIndex = 0;
+
+function typeWriter() {
+    if (textIndex < textToType.length) {
+        typewriterElement.innerHTML += textToType.charAt(textIndex);
+        textIndex++;
+        setTimeout(typeWriter, 50); // 50 milliseconds per letter
+    }
+}
+
+// Start the typing effect when the page loads
+window.onload = typeWriter;
